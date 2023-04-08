@@ -1,0 +1,19 @@
+{
+	"namespace": "NixsItems",
+	"displayName": "Nix's Items",
+	"version": "1.0.0",
+	"synchronyVersion": "0.47",
+	"description": "Nix's Items! (Unfinished but y'know what I'll make it public.)",
+	"author": "Nixill",
+	"dependencies": {"PowerSettings_io_2237104":"2.0.1"},
+	"api": {"scriptPath":"scripts"},
+	"icon": "NixsItemsIcon.png",
+	"banner": "NixsItemsBanner.png",
+	"tags": [],
+	"name": "NixsItems_io_2757501",
+	"homepageURL": "https://mod.io/g/crypt/m/nixsitems",
+	"modioID": "2757501",
+	"modioUserID": 12939888,
+	"pendingVersion": "1.0.0",
+	"visibility": 0
+}
