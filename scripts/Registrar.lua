@@ -43,6 +43,28 @@ Components.register {
 
 --#region ENTITIES
 CustomEntities.extend {
+  name = "NixsItems_RingPreservation",
+  template = CustomEntities.template.item("ring_shielding"),
+  data = {
+    flyaway = "Ring of Preservation",
+    name = "Ring of Preservation",
+    hint = "Preserve shields",
+    slot = "ring"
+  },
+  components = {
+    sprite = {
+      texture = HSVFilter.getPath("ext/items/ring_shielding.png", -86 / 360, -0.3, 0)
+    },
+    itemIncomingDamageImmunityCastSpell = false,
+    itemIncomingDamageImmunityConsume = false,
+    itemIncomingDamageImmunityFirst = false,
+    itemIncomingDamageImmunityFlyaway = false,
+    itemIncomingDamageImmunityHitstop = false,
+    Sync_itemProtectShields = {}
+  }
+}
+
+CustomEntities.extend {
   name = "NixsItems_ShovelSilver",
   template = CustomEntities.template.item("shovel_basic"),
   data = {
@@ -70,28 +92,6 @@ CustomEntities.extend {
       blood = 1.5,
       coins = 80
     }
-  }
-}
-
-CustomEntities.extend {
-  name = "NixsItems_RingPreservation",
-  template = CustomEntities.template.item("ring_shielding"),
-  data = {
-    flyaway = "Ring of Preservation",
-    name = "Ring of Preservation",
-    hint = "Preserve shields",
-    slot = "ring"
-  },
-  components = {
-    sprite = {
-      texture = HSVFilter.getPath("ext/items/ring_shielding.png", -86 / 360, -0.3, 0)
-    },
-    itemIncomingDamageImmunityCastSpell = false,
-    itemIncomingDamageImmunityConsume = false,
-    itemIncomingDamageImmunityFirst = false,
-    itemIncomingDamageImmunityFlyaway = false,
-    itemIncomingDamageImmunityHitstop = false,
-    Sync_itemProtectShields = {}
   }
 }
 --#endregion
